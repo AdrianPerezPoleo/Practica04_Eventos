@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 6203747892179087054}
   m_Layer: 0
   m_Name: Humanoide_Tipo2
-  m_TagString: Untagged
+  m_TagString: Tipo 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
