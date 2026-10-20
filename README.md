@@ -40,6 +40,7 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
+![](GIFs/PruebaEjercicio03.gif)
 
 ## Ejercicio 04
 

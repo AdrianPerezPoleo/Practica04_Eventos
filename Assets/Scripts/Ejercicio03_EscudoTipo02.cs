@@ -19,7 +19,7 @@ public class Ejercicio03_EscudoTipo02 : MonoBehaviour
         if (collision.gameObject.CompareTag("Tipo 1"))
         {
             Debug.Log("Colisión.");
-            Renderer meshRenderer = collision.gameObject.GetComponentInChildren<Renderer>();
+            Renderer meshRenderer = GetComponent<Renderer>();
             Debug.Log($"Color antiguo: {meshRenderer.material.color}");
             meshRenderer.material.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
             Debug.Log($"Color Nuevo: {meshRenderer.material.color}");

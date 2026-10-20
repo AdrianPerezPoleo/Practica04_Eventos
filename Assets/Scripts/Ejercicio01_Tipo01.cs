@@ -18,7 +18,7 @@ public class Ejercicio01_Tipo01 : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (followTarget && target != null)
+        if (followTarget && target != null && Vector3.Distance(transform.position, target.transform.position) > 0.0f)
         {
             Vector3 directionVector = target.transform.position - transform.position;
             directionVector.y = 0; 
