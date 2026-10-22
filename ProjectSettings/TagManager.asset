@@ -11,6 +11,12 @@ TagManager:
   - Cylinder
   - Building
   - Building Entry
+  - Door
+  - Moneda 1
+  - Moneda 2
+  - Lemon
+  - Endgame
+  - Final Position
   layers:
   - Default
   - TransparentFX
