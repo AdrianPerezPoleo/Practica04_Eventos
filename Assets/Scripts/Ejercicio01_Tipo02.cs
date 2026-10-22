@@ -22,7 +22,7 @@ public class Ejercicio01_Tipo02 : MonoBehaviour
         {
             Vector3 directionVector = target.transform.position - transform.position;
             directionVector.y = 0; 
-            rb.linearVelocity = directionVector.normalized * speed;
+            rb.MovePosition(transform.position + directionVector.normalized * speed * Time.fixedDeltaTime);
         }
     }
     void follow()

@@ -9,9 +9,8 @@ public class Ejercicio01_Notificador : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Cube"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Persecución Activada");
             OnFollow();
         }
     }

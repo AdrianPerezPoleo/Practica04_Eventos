@@ -427,7 +427,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b458b69837a4dd42922e88afeb2f10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ejercicio01_Tipo02
-  speed: 2
+  speed: 1.5
 --- !u!1 &751816850
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b458b69837a4dd42922e88afeb2f10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ejercicio01_Tipo02
-  speed: 2
+  speed: 1.5
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb24ef2f0947ab4d8c71bc4d7d69109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ejercicio01_Tipo01
-  speed: 2
+  speed: 1.1
   target: {fileID: 751816850}
 --- !u!1 &929416917
 GameObject:
@@ -908,11 +908,10 @@ GameObject:
   - component: {fileID: 929416920}
   - component: {fileID: 929416919}
   - component: {fileID: 929416918}
-  - component: {fileID: 929416923}
   - component: {fileID: 929416924}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Player
+  m_TagString: Cylinder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -940,7 +939,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -992,7 +991,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6241fd5666340ff48858c61a18388493, type: 2}
+  - {fileID: 2100000, guid: 35d922b068f4f7946b5df45a28bd42a8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1033,25 +1032,12 @@ Transform:
   m_GameObject: {fileID: 929416917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.11, y: 1.013, z: -7.51}
+  m_LocalPosition: {x: 3.11, y: 1.013, z: -3.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &929416923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929416917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93bbdd18a75ca9b4ba8aeb27ab1160b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  speed: 2
 --- !u!114 &929416924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,9 +1063,10 @@ GameObject:
   - component: {fileID: 1662134818}
   - component: {fileID: 1662134817}
   - component: {fileID: 1662134816}
+  - component: {fileID: 1662134821}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Cube
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1107,7 +1094,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1157,7 +1144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 35d922b068f4f7946b5df45a28bd42a8, type: 2}
+  - {fileID: 2100000, guid: 6241fd5666340ff48858c61a18388493, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1198,12 +1185,25 @@ Transform:
   m_GameObject: {fileID: 1662134815}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 0.53300005, z: -2.03}
+  m_LocalPosition: {x: 0.03, y: 0.53300005, z: -8.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662134821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662134815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bbdd18a75ca9b4ba8aeb27ab1160b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ejercicio01_MovimientoCilindro
+  speed: 3
 --- !u!1 &1837510709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1369,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2942035004455494793, guid: eaf14a23bef85eb499c56527a174bdbf, type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3304192279026335045, guid: eaf14a23bef85eb499c56527a174bdbf, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1421,6 +1429,14 @@ PrefabInstance:
     - target: {fileID: 378018149281879846, guid: 783aec48cd128b14183c117140a85106, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966506237351493571, guid: 783aec48cd128b14183c117140a85106, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977622225686482778, guid: 783aec48cd128b14183c117140a85106, type: 3}
+      propertyPath: speed
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4977622225686482778, guid: 783aec48cd128b14183c117140a85106, type: 3}
       propertyPath: target

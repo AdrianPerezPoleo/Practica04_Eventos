@@ -18,11 +18,11 @@ public class Ejercicio01_Tipo01 : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (followTarget && target != null && Vector3.Distance(transform.position, target.transform.position) > 0.0f)
+        if (followTarget && target != null)
         {
             Vector3 directionVector = target.transform.position - transform.position;
             directionVector.y = 0; 
-            rb.linearVelocity = directionVector.normalized * speed;
+            rb.MovePosition(transform.position + directionVector.normalized * speed * Time.fixedDeltaTime);
         }
     }
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ejercicio01_MovimientoCilindro : MonoBehaviour
+public class Ejercicio01_MovimientoCubo : MonoBehaviour
 {
     public float speed = 2.0f;
 

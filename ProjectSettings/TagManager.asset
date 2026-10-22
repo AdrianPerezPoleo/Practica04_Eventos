@@ -6,9 +6,9 @@ TagManager:
   tags:
   - Tipo 1
   - Tipo 2
-  - Cube
   - Escudo Tipo 1
   - Escudo Tipo 2
+  - Cylinder
   layers:
   - Default
   - TransparentFX
