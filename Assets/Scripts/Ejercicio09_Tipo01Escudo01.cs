@@ -1,0 +1,54 @@
+using UnityEngine;
+
+public class Ejercicio09_Tipo01Escudo01 : MonoBehaviour
+{
+    public float speed = 2.0f;
+
+    private Rigidbody rb;
+    public GameObject target;
+
+    private Ejercicio09_Notificador notifier;
+
+    private bool followTarget = false;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        notifier = GameObject.FindWithTag("Player").GetComponent<Ejercicio09_Notificador>();
+        rb = GetComponent<Rigidbody>();
+        notifier.OnFollowSecond += Follow;
+    }
+
+    void FixedUpdate()
+    {
+        if (followTarget && target != null)
+        {
+            Vector3 directionVector = target.transform.position - transform.position;
+            directionVector.y = 0; 
+            if (directionVector != Vector3.zero)
+            {
+                rb.MoveRotation(Quaternion.LookRotation(directionVector));
+            }
+            rb.MovePosition(transform.position + transform.forward * speed * Time.fixedDeltaTime);
+        }
+    }
+
+    void Follow()
+    {
+        if (target == null) return;
+        followTarget = true;
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject == target)
+        {
+            followTarget = false;
+        }       
+    }
+
+    void OnDestroy()
+    {
+        notifier.OnFollowFirst -= Follow;
+    }
+}
