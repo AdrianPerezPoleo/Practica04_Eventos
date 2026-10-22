@@ -9,6 +9,8 @@ TagManager:
   - Escudo Tipo 1
   - Escudo Tipo 2
   - Cylinder
+  - Building
+  - Building Entry
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a4918fc2522780b44918abe483fbb7e6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 407714
+  packageName: Low Poly Medieval Starter Pack - Mini World Studio
+  packageVersion: 1.0
+  assetPath: Assets/MiniWorld Studio/Low Poly Medieval Starter Pack/Materials/BaselColor.shadergraph
+  uploadId: 1017152
