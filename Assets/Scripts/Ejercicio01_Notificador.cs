@@ -4,7 +4,7 @@ public class Ejercicio01_Notificador : MonoBehaviour
 {
 
     public delegate void FollowDelegate();
-    public static event FollowDelegate OnFollow;
+    public event FollowDelegate OnFollow;
     
 
     void OnCollisionEnter(Collision collision)

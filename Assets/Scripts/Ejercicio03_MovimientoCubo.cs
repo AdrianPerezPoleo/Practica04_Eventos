@@ -24,6 +24,10 @@ public class Ejercicio03_MovimientoCubo : MonoBehaviour
     {
         if (rb == null) return;
         Vector3 directionVector = new Vector3(horizontalAxis, 0, verticalAxis);
-        rb.MovePosition(transform.position + directionVector.normalized * speed * Time.fixedDeltaTime);
+        if (directionVector != Vector3.zero)
+        {
+            rb.MoveRotation(Quaternion.LookRotation(directionVector));
+            rb.MovePosition(transform.position + transform.forward * speed * Time.fixedDeltaTime);
+        }
     }
 }

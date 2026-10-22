@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Ejercicio01_Tipo01 : MonoBehaviour
@@ -7,13 +8,16 @@ public class Ejercicio01_Tipo01 : MonoBehaviour
     private Rigidbody rb;
     public GameObject target;
 
+    private Ejercicio01_Notificador notifier;
+
     private bool followTarget = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        notifier = GameObject.FindWithTag("Cylinder").GetComponent<Ejercicio01_Notificador>();
         rb = GetComponent<Rigidbody>();
-        Ejercicio01_Notificador.OnFollow += follow;
+        notifier.OnFollow += follow;
     }
 
     void FixedUpdate()
@@ -22,7 +26,11 @@ public class Ejercicio01_Tipo01 : MonoBehaviour
         {
             Vector3 directionVector = target.transform.position - transform.position;
             directionVector.y = 0; 
-            rb.MovePosition(transform.position + directionVector.normalized * speed * Time.fixedDeltaTime);
+            if (directionVector != Vector3.zero)
+            {
+                rb.MoveRotation(Quaternion.LookRotation(directionVector));
+            }
+            rb.MovePosition(transform.position + transform.forward * speed * Time.fixedDeltaTime);
         }
     }
 
@@ -34,6 +42,6 @@ public class Ejercicio01_Tipo01 : MonoBehaviour
 
     void OnDestroy()
     {
-        Ejercicio01_Notificador.OnFollow -= follow;
+        notifier.OnFollow -= follow;
     }
 }
