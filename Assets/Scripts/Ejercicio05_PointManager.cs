@@ -1,4 +1,3 @@
-using System.Drawing;
 using UnityEngine;
 
 public class Ejercicio05_PointManager : MonoBehaviour
@@ -15,6 +14,11 @@ public class Ejercicio05_PointManager : MonoBehaviour
     {
         totalPoints += points;
         Debug.Log($"Se ha recogido un escudo. Nueva puntuación: {totalPoints}.");
+    }
+
+    public int GetPoints()
+    {
+        return totalPoints;
     }
 
     void OnDestroy()
