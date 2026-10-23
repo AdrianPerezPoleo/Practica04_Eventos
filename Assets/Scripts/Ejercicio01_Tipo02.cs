@@ -14,7 +14,7 @@ public class Ejercicio01_Tipo02 : MonoBehaviour
     {
         notifier = GameObject.FindWithTag("Cylinder").GetComponent<Ejercicio01_Notificador>();
         rb = GetComponent<Rigidbody>();
-        target = GameObject.FindWithTag("Player").transform;
+        target = GameObject.FindWithTag("Cylinder").transform;
         notifier.OnFollow += follow;
     }
 
