@@ -18,9 +18,13 @@ En esta práctica se han utilizado delegados y eventos en Unity. Gracias a estas
 
 ## Ejercicio 01
 Los ficheros de código se encuentran en: 
+
 [Assets/Scripts/Ejercicio01_MovimientoCubo.cs](Assets/Scripts/Ejercicio01_MovimientoCubo.cs)
+
 [Assets/Scripts/Ejercicio01_Notificador.cs](Assets/Scripts/Ejercicio01_Notificador.cs)
+
 [Assets/Scripts/Ejercicio01_Tipo01.cs](Assets/Scripts/Ejercicio01_Tipo01.cs)
+
 [Assets/Scripts/Ejercicio01_Tipo02.cs](Assets/Scripts/Ejercicio01_Tipo02.cs)
 
 ### Descripción
@@ -48,6 +52,7 @@ Este ejercicio no requiere de nuevos scripts. La implementación consistió en i
 
 ## Ejercicio 03
 Los ficheros de código se encuentran en: 
+
 [Assets/Scripts/Ejercicio03_EscudoTipo02.cs](Assets/Scripts/Ejercicio03_EscudoTipo02.cs)
 
 [Assets/Scripts/Ejercicio03_MovimientoCubo.cs](Assets/Scripts/Ejercicio03_MovimientoCubo.cs)
@@ -72,6 +77,7 @@ Los humanoides cuentan con los scripts `Ejercicio03_Tipo01Escudo01` y `Ejercicio
 
 ## Ejercicio 04
 Los ficheros de código se encuentran en: 
+
 [Assets/Scripts/Ejercicio04_Movimiento.cs](Assets/Scripts/Ejercicio04_Movimiento.cs)
 
 [Assets/Scripts/Ejercicio04_Notifier.cs](Assets/Scripts/Ejercicio04_Notifier.cs)
@@ -94,6 +100,7 @@ La respuesta al evento se dividió en dos scripts. El script `Ejercicio04_Tipo01
 
 ## Ejercicio 05
 Los ficheros de código se encuentran en: 
+
 [Assets/Scripts/Ejercicio05_EscudoRecolectable.cs](Assets/Scripts/Ejercicio05_EscudoRecolectable.cs)
 
 [Assets/Scripts/Ejercicio05_Movimiento.cs](Assets/Scripts/Ejercicio05_Movimiento.cs)
@@ -126,6 +133,7 @@ Para la parte visual, se integró en la escena un objeto *Canvas* que contenía 
 
 ## Ejercicio 08
 Los ficheros de código se encuentran en: 
+
 [Assets/Scripts/Ejercicio08_CoinCollector.cs](Assets/Scripts/Ejercicio08_CoinCollector.cs)
 
 [Assets/Scripts/Ejercicio08_DirectionalLight.cs](Assets/Scripts/Ejercicio08_DirectionalLight.cs)
@@ -158,6 +166,7 @@ Por último, se definió una condición de victoria en `Ejercicio08_EndgameNotif
 
 ## Ejercicio 09
 Los ficheros de código se encuentran en: 
+
 [Assets/Scripts/Ejercicio09_EscudoTipo02.cs](Assets/Scripts/Ejercicio09_EscudoTipo02.cs)
 
 [Assets/Scripts/Ejercicio09_MovimientoCubo.cs](Assets/Scripts/Ejercicio09_MovimientoCubo.cs)
