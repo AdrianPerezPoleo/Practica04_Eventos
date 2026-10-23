@@ -27,7 +27,7 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio01.gif)
 
 ## Ejercicio 02
 Este ejercicio no tiene ficheros de código.
@@ -37,7 +37,7 @@ Este ejercicio no tiene ficheros de código.
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio02.gif)
 
 ## Ejercicio 03
 Los ficheros de código se encuentran en: 
@@ -52,7 +52,7 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio03.gif)
 
 ## Ejercicio 04
 Los ficheros de código se encuentran en: 
@@ -66,7 +66,7 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio04.gif)
 
 ## Ejercicio 05
 Los ficheros de código se encuentran en: 
@@ -79,7 +79,7 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio05.gif)
 
 ## Ejercicio 06
 Los ficheros de código se encuentran en: 
@@ -90,7 +90,7 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio06.gif)
 
 ## Ejercicio 08
 Los ficheros de código se encuentran en: 
@@ -108,7 +108,8 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio08_01.gif)
+![](GIFs/Ejercicio08_02.gif)
 
 ## Ejercicio 09
 Los ficheros de código se encuentran en: 
@@ -123,4 +124,4 @@ Los ficheros de código se encuentran en:
 ### Implementación
 
 ### Ejecución
-![]()
+![](GIFs/Ejercicio09.gif)
